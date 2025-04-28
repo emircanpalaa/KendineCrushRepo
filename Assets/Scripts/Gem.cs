@@ -9,7 +9,7 @@ public class Gem : MonoBehaviour
 {
     [HideInInspector]
     public Vector2Int positionIndex;
-    [HideInInspector]
+    
     public Board board;
 
 
@@ -21,11 +21,19 @@ public class Gem : MonoBehaviour
     private GameObject otherGem;
 
 
-    public enum GemType {Blue,Green,Red,Yellow,Purple};
+    public enum GemType {Blue,Green,Red,Yellow,Purple,Bomb};
     public GemType type;
     public bool isMatched = false;
     [HideInInspector]
     public Vector2Int previousPosition;
+
+    public GameObject destroyEffect;
+    public int _blastSize = 2;
+
+    public int gemValue = 10;
+
+
+
     void Start()
     {
         
@@ -48,8 +56,13 @@ public class Gem : MonoBehaviour
         if(mouseClicked && Input.GetMouseButtonUp(0))
         {
             mouseClicked = false;
-            finalTouchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            AngleCalculator();
+
+            if(board.currentState == Board.BoardState.move && board.roundMan.roundTime > 0)
+            {
+                finalTouchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                AngleCalculator();
+            }
+            
         }
         
     }
@@ -63,8 +76,13 @@ public class Gem : MonoBehaviour
 
     private void OnMouseDown()
     {
-        firstTouchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mouseClicked = true;
+        if(board.currentState == Board.BoardState.move && board.roundMan.roundTime > 0)
+        {
+            firstTouchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mouseClicked = true;
+        }
+
+        
     }
 
     private void AngleCalculator()
@@ -116,6 +134,8 @@ public class Gem : MonoBehaviour
 
     public IEnumerator CheckMove()
     {
+        board.currentState = Board.BoardState.wait;
+
         yield return new WaitForSeconds(.5f);
 
         board.matchFind.FindAllMatches();
@@ -126,6 +146,10 @@ public class Gem : MonoBehaviour
             {
                 otherGem.GetComponent<Gem>().positionIndex = positionIndex;
                 positionIndex = previousPosition;
+
+                yield return new WaitForSeconds(.5f);
+
+                board.currentState = Board.BoardState.move;
             }
             else
             {

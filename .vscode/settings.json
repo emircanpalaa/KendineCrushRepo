@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "KendineCrush1.sln"
+    "dotnet.defaultSolution": "KendineCrushRepo.sln"
 }

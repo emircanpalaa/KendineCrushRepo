@@ -4,6 +4,7 @@ using Unity.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using System.Linq;
+using JetBrains.Annotations;
 
 public class MatchFinder : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class MatchFinder : MonoBehaviour
 
     public void FindAllMatches()
     {
-        //currentMatches.Clear();
+        currentMatches.Clear();
 
         for(int i = 0; i < board.width; i++) 
         {
@@ -44,6 +45,13 @@ public class MatchFinder : MonoBehaviour
                                     currentMatches.Add(leftGem);
                                     currentMatches.Add(rightGem);
                                 }
+
+                                if (currentGem.GetComponent<Gem>().type == Gem.GemType.Bomb)
+                                {
+                                    MarkBombArea(currentGem.GetComponent<Gem>().positionIndex, currentGem);
+                                }
+
+
 
                         }
                     }
@@ -76,5 +84,84 @@ public class MatchFinder : MonoBehaviour
         {
             currentMatches = currentMatches.Distinct().ToList();
         }
+
+        CheckForBombs();
+    }
+
+    public void CheckForBombs()
+    {
+        for(int i = 0;i < currentMatches.Count;i++)
+        {
+            GameObject gem = currentMatches[i];
+
+            int x = gem.GetComponent<Gem>().positionIndex.x;
+            int y = gem.GetComponent<Gem>().positionIndex.y;
+
+            if(gem.GetComponent<Gem>().positionIndex.x > 0)
+            {
+                if(board.allGems[x-1,y] != null)
+                {
+                    if (board.allGems[x-1, y].GetComponent<Gem>().type == Gem.GemType.Bomb)
+                    {
+                        MarkBombArea(new Vector2Int(x-1,y),board.allGems[x-1,y]);
+                    }
+                }
+            }
+
+            if(gem.GetComponent<Gem>().positionIndex.x < board.width - 1)
+            {
+                if(board.allGems[x + 1,y] != null)
+                {
+                    if (board.allGems[x + 1, y].GetComponent<Gem>().type == Gem.GemType.Bomb)
+                    {
+                        MarkBombArea(new Vector2Int(x + 1,y),board.allGems[x + 1,y]);
+                    }
+
+                }
+            }
+
+            if(gem.GetComponent<Gem>().positionIndex.y > 0)
+            {
+                if(board.allGems[x,y - 1] != null)
+                {
+                    if (board.allGems[x, y - 1].GetComponent<Gem>().type == Gem.GemType.Bomb)
+                    {
+                        MarkBombArea(new Vector2Int(x,y - 1),board.allGems[x,y - 1]);
+                    }
+                }
+            }
+
+            if(gem.GetComponent<Gem>().positionIndex.y < board.height - 1)
+            {
+                if(board.allGems[x,y + 1] != null)
+                {
+                    if (board.allGems[x, y + 1].GetComponent<Gem>().type == Gem.GemType.Bomb)
+                    {
+                        MarkBombArea(new Vector2Int(x,y + 1),board.allGems[x,y + 1]);
+                    }
+
+                }
+            }
+        }
+    }
+
+    public void MarkBombArea(Vector2Int bombPosition,GameObject theBomb)
+    {
+        for(int x = bombPosition.x - theBomb.GetComponent<Gem>()._blastSize; x <= bombPosition.x + theBomb.GetComponent<Gem>()._blastSize;x++)
+        {
+            for(int y = bombPosition.y - theBomb.GetComponent<Gem>()._blastSize; y <= bombPosition.y + theBomb.GetComponent<Gem>()._blastSize;y++)
+            {
+                if(x >= 0 && x < board.width && y >= 0 && y < board.height)
+                {
+                    if(board.allGems[x,y] != null)
+                    {
+                        board.allGems[x,y].GetComponent<Gem>().isMatched = true;
+                        currentMatches.Add(board.allGems[x,y]);
+                    }
+                }
+            }
+        }
+
+        currentMatches = currentMatches.Distinct().ToList();
     }
 }

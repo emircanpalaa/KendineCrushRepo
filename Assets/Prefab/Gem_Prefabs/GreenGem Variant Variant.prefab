@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: type
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -5110427067061054755, guid: d26ed074806056e479a2d8b65962dbfa, type: 3}
+      propertyPath: destroyEffect
+      value: 
+      objectReference: {fileID: 670975424060284967, guid: c6f5e5bccaa88c14ebbc3f00cf33f951, type: 3}
     - target: {fileID: -3296343423829548048, guid: d26ed074806056e479a2d8b65962dbfa, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 0.74871796
