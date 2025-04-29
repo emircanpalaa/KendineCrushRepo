@@ -32,6 +32,8 @@ public class Gem : MonoBehaviour
 
     public int gemValue = 10;
 
+    public int MultiGem = 50;
+
 
 
     void Start()

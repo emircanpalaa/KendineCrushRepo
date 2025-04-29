@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 1138168557
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6a4836de24a0c354f986c800d32b7c86, type: 3}
+  m_Sprite: {fileID: -4910088520043721169, guid: cedaa98f4e72a81479e990fbf1367444, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -107,6 +107,9 @@ MonoBehaviour:
   isMatched: 0
   previousPosition: {x: 0, y: 0}
   destroyEffect: {fileID: 6518785630491207247, guid: ecf902e095225fa408a6f14ac1969a09, type: 3}
+  _blastSize: 2
+  gemValue: 10
+  MultiGem: 50
 --- !u!61 &-3296343423829548048
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -145,7 +148,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8820513, y: 0.8871795}
+    oldSize: {x: 4.76, y: 1.84}
     newSize: {x: 0.8820513, y: 0.8871795}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class RoundManager : MonoBehaviour
@@ -10,6 +11,9 @@ public class RoundManager : MonoBehaviour
     private Board board;
 
     public int currentScore;
+
+    public float displayScore;
+    public float scoreSpeed = 5;
     void Awake()
     {
         uiMan = FindAnyObjectByType<UI_Manager>();
@@ -46,7 +50,9 @@ public class RoundManager : MonoBehaviour
 
         uiMan.timeText.text = roundTime.ToString("0.0") + "";
 
-        uiMan.scoreText.text = currentScore.ToString();
+
+        displayScore = Mathf.Lerp(displayScore,currentScore,scoreSpeed * Time.deltaTime);
+        uiMan.scoreText.text = Mathf.Round(displayScore).ToString();
     }
 
     private void WinCheck()

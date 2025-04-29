@@ -33,6 +33,11 @@ public class Board : MonoBehaviour
 
     [HideInInspector]
     public RoundManager roundMan;
+
+    private float _bonusMulti;
+    public float bonusAmount = .5f;
+
+    
     
 
     void Awake()
@@ -166,6 +171,7 @@ private void DestroyMatchedGems(Vector2Int pos)
             if(matchFind.currentMatches[i] != null)
             {
                 ScoreCheck(matchFind.currentMatches[i]);
+                //ScoreMultipler(matchFind.currentMatches[i]);
 
                 DestroyMatchedGems(matchFind.currentMatches[i].GetComponent<Gem>().positionIndex);
             }
@@ -209,12 +215,16 @@ private void DestroyMatchedGems(Vector2Int pos)
 
     if(matchFind.currentMatches.Count > 0)
     {
+        _bonusMulti++;
+
         yield return new WaitForSeconds(.5f);
         DestroyMatches();
     }
     else
     {
         currentState = BoardState.move;
+
+        _bonusMulti = 0f;
     }
     }
 
@@ -330,7 +340,33 @@ private void DestroyMatchedGems(Vector2Int pos)
     public void ScoreCheck(GameObject gemToCheck)
     {
         roundMan.currentScore += gemToCheck.GetComponent<Gem>().gemValue;
+
+        if(_bonusMulti > 0 )
+        {
+            float bonusToAdd = gemToCheck.GetComponent<Gem>().gemValue * _bonusMulti * bonusAmount;
+            roundMan.currentScore += Mathf.RoundToInt(bonusToAdd);
+        }
+        
     }
+
+    // public void ScoreMultipler(GameObject gemToCheck)
+    // {
+    //     if(matchFind.currentMatches.Count >= 6)
+    //     {
+    //         GetComponent<Gem>().MultiGem = gemToCheck.GetComponent<Gem>().gemValue * (matchFind.currentMatches.Count/2);
+
+    //         for(int i; )
+
+
+    //     }
+    //     else
+    //     {
+    //         roundMan.currentScore += gemToCheck.GetComponent<Gem>().gemValue;
+    //     }
+        
+
+            
+    
 
 
 
