@@ -214,11 +214,7 @@ private void DestroyMatchedGems(Vector2Int pos)
     }
     else
     {
-        // Sadece shuffle değilse move yap
-        if (currentState != BoardState.wait)
-        {
-            currentState = BoardState.move;
-        }
+        currentState = BoardState.move;
     }
     }
 
@@ -314,6 +310,8 @@ private void DestroyMatchedGems(Vector2Int pos)
             }
 
             StartCoroutine(FillBoardCoroutine());
+
+            currentState = Board.BoardState.move;
 
         }
     }

@@ -29,6 +29,8 @@ public class RoundManager : MonoBehaviour
 
                 endingRound = true;
 
+                board.currentState = Board.BoardState.wait;
+
                 
             }
         }
