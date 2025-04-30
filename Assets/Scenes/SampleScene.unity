@@ -215,7 +215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &95198762
 RectTransform:
   m_ObjectHideFlags: 0
@@ -229,6 +229,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 467846493}
+  - {fileID: 909555763}
   m_Father: {fileID: 1791433696}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1303,7 +1304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &909555763
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1311,18 +1312,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909555762}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -5}
   m_LocalScale: {x: 6.51, y: 1.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1324482598}
   - {fileID: 432983152}
-  m_Father: {fileID: 1791433696}
+  m_Father: {fileID: 95198762}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: 53}
+  m_AnchoredPosition: {x: -1.9997559, y: 53}
   m_SizeDelta: {x: 121.3008, y: 117.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &909555764
@@ -1400,7 +1401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -553, y: 449}
+  m_AnchoredPosition: {x: -553.0002, y: 449}
   m_SizeDelta: {x: 382.631, y: 49.959}
   m_Pivot: {x: 0.49999997, y: 0.49999994}
 --- !u!114 &1023630290
@@ -1988,7 +1989,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2089619641}
-  - {fileID: 1515379425}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1503129161
@@ -2147,11 +2147,11 @@ Transform:
   m_GameObject: {fileID: 1515379423}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.85, y: -0.87, z: 1}
-  m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
+  m_LocalPosition: {x: -7.8, y: -1.1600001, z: 0}
+  m_LocalScale: {x: 0.46666667, y: 0.46666667, z: 0.35}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1340630484}
+  m_Father: {fileID: 2089619641}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1695586422
 GameObject:
@@ -2341,7 +2341,6 @@ RectTransform:
   - {fileID: 74910413}
   - {fileID: 2035825998}
   - {fileID: 95198762}
-  - {fileID: 909555763}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2439,8 +2438,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Time's running out... don't sugarcoat it
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6d76f9140c98c1a4080d8bca3403e59a, type: 2}
-  m_sharedMaterial: {fileID: -5811816213858026771, guid: 6d76f9140c98c1a4080d8bca3403e59a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ba7145a0a399994c938ea24cc08d457, type: 2}
+  m_sharedMaterial: {fileID: -5811816213858026771, guid: 3ba7145a0a399994c938ea24cc08d457, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2797,7 +2796,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1515379425}
   m_Father: {fileID: 1340630484}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2089619642
@@ -2860,8 +2860,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1340630484}
+  - {fileID: 1791433696}
   - {fileID: 775008533}
   - {fileID: 1835390845}
-  - {fileID: 1791433696}
   - {fileID: 1209439215}
   - {fileID: 1048612541}
