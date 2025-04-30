@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class RoundManager : MonoBehaviour
 {
-    public float roundTime = 60f;
+    public float roundTime;
     private UI_Manager uiMan;
 
     private bool endingRound = false;
@@ -58,5 +58,10 @@ public class RoundManager : MonoBehaviour
     private void WinCheck()
     {
         uiMan.roundOverScreen.SetActive(true);
+    }
+
+    public float GetRoundTime()
+    {
+        return roundTime;
     }
 }
