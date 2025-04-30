@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PremadeButtons_XRed_0: 2168958808540731756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

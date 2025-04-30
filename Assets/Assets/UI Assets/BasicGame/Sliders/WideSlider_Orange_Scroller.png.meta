@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WideSlider_Orange_Scroller_0: 6625930377208018619
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

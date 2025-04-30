@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      platformer_background_2_0: -3463603074167210384
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

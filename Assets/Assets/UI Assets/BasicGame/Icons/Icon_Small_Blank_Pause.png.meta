@@ -185,7 +185,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Icon_Small_Blank_Pause_0: 3679445767994609837
+      Icon_Small_Blank_Pause_1: 1824810840360195219
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

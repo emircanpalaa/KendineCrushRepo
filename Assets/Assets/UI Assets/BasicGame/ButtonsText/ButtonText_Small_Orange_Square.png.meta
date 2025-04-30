@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ButtonText_Small_Orange_Square_0: 7400117285034046549
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

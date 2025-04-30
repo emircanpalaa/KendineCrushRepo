@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      IconButton_Large_Blue_Rounded_0: -7236348426585993012
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

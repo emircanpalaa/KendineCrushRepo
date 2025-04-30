@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ScrollBar_Orange_Scroller_0: 3654455227637064669
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

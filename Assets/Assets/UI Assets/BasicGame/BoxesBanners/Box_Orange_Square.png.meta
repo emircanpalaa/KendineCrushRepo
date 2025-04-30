@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Box_Orange_Square_0: 7220389608012761807
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

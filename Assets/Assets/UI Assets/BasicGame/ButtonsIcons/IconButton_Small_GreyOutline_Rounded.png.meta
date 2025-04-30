@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      IconButton_Small_GreyOutline_Rounded_0: -5667386218576746778
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

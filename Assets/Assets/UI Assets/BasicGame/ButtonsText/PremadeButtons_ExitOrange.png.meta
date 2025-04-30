@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PremadeButtons_ExitOrange_0: 1475829015372806847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

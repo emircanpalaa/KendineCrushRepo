@@ -660,7 +660,28 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      layer06_Stars_3_0: 6176130251338552060
+      layer06_Stars_3_1: -4235498600101157036
+      layer06_Stars_3_10: -2009966280578062893
+      layer06_Stars_3_11: -1271137063171737116
+      layer06_Stars_3_12: -8038908234356044162
+      layer06_Stars_3_13: -5437436551283023384
+      layer06_Stars_3_14: 8091770216032786344
+      layer06_Stars_3_15: 8022147233703266255
+      layer06_Stars_3_16: 9014413818221694108
+      layer06_Stars_3_17: -5870612032939210229
+      layer06_Stars_3_18: -7840661943789993852
+      layer06_Stars_3_19: 7407267935885653785
+      layer06_Stars_3_2: 6562618306627367351
+      layer06_Stars_3_20: 1885727332445987986
+      layer06_Stars_3_3: -3078490344741911258
+      layer06_Stars_3_4: 1107170767577276058
+      layer06_Stars_3_5: -1378029826817242495
+      layer06_Stars_3_6: -6996165502684305646
+      layer06_Stars_3_7: -5226339186194800478
+      layer06_Stars_3_8: -8404316763587794537
+      layer06_Stars_3_9: -2486707417786760263
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

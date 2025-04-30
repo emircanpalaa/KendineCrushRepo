@@ -360,7 +360,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      layer07_Stars_2_0: -1136662433450906729
+      layer07_Stars_2_1: -1169751832071074473
+      layer07_Stars_2_2: -8141596060069197277
+      layer07_Stars_2_3: -2806754082137163042
+      layer07_Stars_2_4: -7644948088649566688
+      layer07_Stars_2_5: -1802892446970640095
+      layer07_Stars_2_6: -4469475006286039219
+      layer07_Stars_2_7: 6395910557182508268
+      layer07_Stars_2_8: -2445539089629427963
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

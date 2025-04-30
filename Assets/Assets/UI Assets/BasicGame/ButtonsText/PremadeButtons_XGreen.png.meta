@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PremadeButtons_XGreen_0: -4255639331674529426
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

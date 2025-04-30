@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ScrollSlider_Blank_Arrow_0: 928252201443065863
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

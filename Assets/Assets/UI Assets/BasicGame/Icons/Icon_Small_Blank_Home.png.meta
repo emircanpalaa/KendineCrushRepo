@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Icon_Small_Blank_Home_0: 6553503856012885825
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

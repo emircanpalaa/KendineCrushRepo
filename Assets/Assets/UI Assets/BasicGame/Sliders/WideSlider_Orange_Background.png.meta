@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WideSlider_Orange_Background_0: 6810051987682074209
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

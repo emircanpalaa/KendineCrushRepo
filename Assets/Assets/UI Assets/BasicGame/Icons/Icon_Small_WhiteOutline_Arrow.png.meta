@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Icon_Small_WhiteOutline_Arrow_0: -999377776597308273
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

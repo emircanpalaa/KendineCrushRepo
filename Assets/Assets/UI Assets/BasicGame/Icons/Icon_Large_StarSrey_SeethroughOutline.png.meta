@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Icon_Large_StarSrey_SeethroughOutline_0: 1439425916464849176
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

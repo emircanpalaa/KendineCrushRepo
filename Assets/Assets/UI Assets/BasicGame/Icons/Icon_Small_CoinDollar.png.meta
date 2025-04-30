@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Icon_Small_CoinDollar_0: -3586120658921435353
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

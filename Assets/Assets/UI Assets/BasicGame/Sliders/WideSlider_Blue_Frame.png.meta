@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WideSlider_Blue_Frame_0: -5523676285821009989
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

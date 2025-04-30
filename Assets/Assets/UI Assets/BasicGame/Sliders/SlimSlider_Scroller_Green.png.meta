@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SlimSlider_Scroller_Green_0: -911777421813079954
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

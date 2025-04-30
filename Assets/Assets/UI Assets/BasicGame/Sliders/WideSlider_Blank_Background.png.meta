@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WideSlider_Blank_Background_0: 1723381439208667513
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

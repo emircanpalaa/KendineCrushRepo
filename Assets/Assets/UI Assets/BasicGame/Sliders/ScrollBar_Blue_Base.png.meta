@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ScrollBar_Blue_Base_0: -8391956503219638296
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

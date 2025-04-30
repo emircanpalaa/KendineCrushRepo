@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Icon_Large_HeartEmpty_SeethroughOutline_0: 6066542790599169327
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
