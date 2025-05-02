@@ -14,6 +14,8 @@ public class RoundManager : MonoBehaviour
 
     public float displayScore;
     public float scoreSpeed = 5;
+
+    public int scoreTarget_1,scoreTarget_2,scoreTarget_3;
     void Awake()
     {
         uiMan = FindAnyObjectByType<UI_Manager>();
@@ -58,6 +60,23 @@ public class RoundManager : MonoBehaviour
     private void WinCheck()
     {
         uiMan.roundOverScreen.SetActive(true);
+
+        uiMan.winScore.text = currentScore.ToString();
+
+        if(currentScore >= scoreTarget_3)
+        {
+            uiMan.winStar_3.SetActive(true);
+        }
+
+        else if(currentScore >= scoreTarget_2)
+        {
+            uiMan.winStar_2.SetActive(true);
+        }
+
+        else if(currentScore >= scoreTarget_1)
+        {
+            uiMan.winStar_1.SetActive(true);
+        }
     }
 
     public float GetRoundTime()
