@@ -1002,7 +1002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46d50f67db7c5c840a392a0a2cded51d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Test Level
+  levelToLoad: LevelSelect Screen
 --- !u!1001 &8305947479889864427
 PrefabInstance:
   m_ObjectHideFlags: 0
