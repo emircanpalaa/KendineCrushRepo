@@ -15,7 +15,6 @@ public class Silder : MonoBehaviour
         startTime = roundManager.GetRoundTime();
     }
 
-    // Update is called once per frame
     void Update()
     {
         roundTime = roundManager.GetRoundTime();

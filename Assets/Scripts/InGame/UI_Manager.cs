@@ -13,6 +13,8 @@ public class UI_Manager : MonoBehaviour
 
     public GameObject roundOverScreen;
 
+    public GameObject pauseScreen;
+
     void Start()
     {
         winStar_1.SetActive(false);
@@ -21,9 +23,29 @@ public class UI_Manager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         
+    }
+
+    public void PauseUnPause()
+    {
+        if(!pauseScreen.activeInHierarchy)
+        {
+            pauseScreen.SetActive(true);
+            Time.timeScale = 0f;
+            
+        }
+        else
+        {
+            pauseScreen.SetActive(false);
+            Time.timeScale = 1f;
+        }
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

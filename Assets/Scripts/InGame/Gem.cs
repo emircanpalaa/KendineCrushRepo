@@ -1,9 +1,7 @@
-using System;
+
 using System.Collections;
-using Unity.Mathematics;
-using UnityEditor.Rendering;
 using UnityEngine;
-using UnityEngine.Rendering;
+
 
 public class Gem : MonoBehaviour
 {
@@ -21,7 +19,7 @@ public class Gem : MonoBehaviour
     private GameObject otherGem;
 
 
-    public enum GemType {Blue,Green,Red,Yellow,Purple,Bomb};
+    public enum GemType {Blue,Green,Red,Yellow,Purple,Bomb,Stone};
     public GemType type;
     public bool isMatched = false;
     [HideInInspector]
@@ -41,7 +39,7 @@ public class Gem : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         if(Vector2.Distance(transform.position,positionIndex) > .01f)

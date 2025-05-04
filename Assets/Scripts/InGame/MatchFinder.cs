@@ -1,10 +1,7 @@
 using System.Collections.Generic;
-using System.IO.Compression;
-using Unity.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using System.Linq;
-using JetBrains.Annotations;
+
 
 public class MatchFinder : MonoBehaviour
 {
@@ -35,7 +32,7 @@ public class MatchFinder : MonoBehaviour
                         if(leftGem != null && rightGem != null)
                         {
                             if(leftGem.GetComponent<Gem>().type == currentGem.GetComponent<Gem>().type &&
-                                rightGem.GetComponent<Gem>().type == currentGem.GetComponent<Gem>().type)
+                                rightGem.GetComponent<Gem>().type == currentGem.GetComponent<Gem>().type && currentGem.GetComponent<Gem>().type != Gem.GemType.Stone)
                                 {
                                     currentGem.GetComponent<Gem>().isMatched = true;
                                     leftGem.GetComponent<Gem>().isMatched = true;
@@ -63,7 +60,7 @@ public class MatchFinder : MonoBehaviour
                         if(aboveGem != null && belowGem != null)
                         {
                             if(aboveGem.GetComponent<Gem>().type == currentGem.GetComponent<Gem>().type &&
-                                belowGem.GetComponent<Gem>().type == currentGem.GetComponent<Gem>().type)
+                                belowGem.GetComponent<Gem>().type == currentGem.GetComponent<Gem>().type && currentGem.GetComponent<Gem>().type != Gem.GemType.Stone)
                                 {
                                     currentGem.GetComponent<Gem>().isMatched = true;
                                     aboveGem.GetComponent<Gem>().isMatched = true;
