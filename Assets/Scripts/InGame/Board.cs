@@ -37,10 +37,10 @@ public class Board : MonoBehaviour
 
     void Awake()
     {
-        // matchFind = FindAnyObjectByType<MatchFinder>();
-        // roundMan = FindAnyObjectByType<RoundManager>();
+        matchFind = FindAnyObjectByType<MatchFinder>();
+        roundMan = FindAnyObjectByType<RoundManager>();
 
-        // boardLayout = GetComponent<BoardLayout>();
+        boardLayout = GetComponent<BoardLayout>();
     }
 
     void Start()
